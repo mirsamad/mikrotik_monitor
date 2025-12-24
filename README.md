@@ -1,1 +1,21 @@
 # mikrotik_monitor
+# 1) Boş qovluq yarat
+mkdir mikrotik_monitor && cd mikrotik_monitor
+
+# 2) Flutter layihəsini birbaşa burada yarat
+flutter create . --org com.yourdomain --project-name mikrotik_monitor
+
+# 3) Aşağıdakı faylları **lib/**-in üstünə yaz (kod aşağıda)
+#    - lib/models/router.dart
+#    - lib/providers/mikrotik_api.dart
+#    - lib/screens/home_page.dart
+#    - lib/widgets/metric_card.dart
+#    - lib/utils/formatter.dart
+#    - pubspec.yaml  (dart_mikrotik, provider ... dependency əlavə et)
+
+# 4) Git əlaqələndir & ilk commit
+git init
+git remote add origin https://github.com/mirsamad/mikrotik_monitor.git
+git add .
+git commit -m "initial MikroTik monitor (Flutter)"
+git push -u origin main
